@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("ThePrimeagen/vim-be-good")
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
@@ -44,4 +45,8 @@ return require('packer').startup(function(use)
   	}
 
   }
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
+  use("lukas-reineke/indent-blankline.nvim")
   end)
